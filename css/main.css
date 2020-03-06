@@ -109,9 +109,12 @@ nav {
 
 
 .main h2{font-size: 3em}
+.text p{
+  text-align: justify;
+}
+
 .main p{
   color: #929292;
-  text-align: justify;
 }
 
 /* Виды услуг */
