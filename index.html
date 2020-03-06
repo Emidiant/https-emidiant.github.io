@@ -11,84 +11,100 @@
   <meta property=”og:image:width” content=”300″/>
   <meta property=”og:image:height” content=”300″/>
 </head>
-
+<!--
++вместо div - section в  header
++убрать log/span в начале
++nav для навигации
++телефон убрать из nav
++внутри nav список unordered list
++section внутри main
++section и div упростить, смержить
++центр тоже h1.
++для параграфа текста тег p, под описанием расскажем о нас тоже тег p
++около услуг margin упростить, обычный убрать
++у всех изображений прописывается alt, так как изображения могут не прогрузиться, а незрячим пользователям расскажут что там изображено
++центрирование только через css  (обратная связь)
++избавиться от br
++ссылки сделать списком на соцсети
+ -->
 
 
 <body>
   <header>
-    <div class="logo" onclick="#top">
-      <span>
+    <section class="logo">
         Шиномонтаж
-      </span>
-    </div>
-    <div class="about">
-      <a href="#" title="Возможности">Возможности</a>
-      <a href="#" title="Виды услуг">Виды услуг</a>
-      <a href="#" title="Обратная связь">Обратная связь</a>
-      <a href="#" title="Контакты">Контакты</a>
-      <a href="tel:88129452444">8 (812) 945-24-44</a>
-    </div>
+    </section>
+    <nav class="about">
+      <ul>
+        <li><a href="#" title="Возможности">Возможности</a></li>
+        <li><a href="#" title="Виды услуг">Виды услуг</a></li>
+        <li><a href="#" title="Обратная связь">Обратная связь</a></li>
+        <li><a href="#" title="Контакты">Контакты</a></li>
+      </ul>
+    </nav>
+    <a href="tel:88129452444" class="tel"> 8 (812) 945-24-44</a>
   </header>
 
-  <section>
-    <div class="top">
-      <h1>Волхонский шиномонтажный</h1>
-      <h3>центр</h3>
-    </div>
-  </section>
+  <main>
+    <section class="top">
+      <h1>
+        Волхонский шиномонтажный <br>
+        <span class="centre">
+          центр
+        </span>
+      </h1>
+    </section>
 
+    <section class="main">
+      <div class="intro">
+        <h2>Немного о нас</h2>
+        <p>Расскажем вам о сервисе, который предоставляем с 2006 года</p>
+      </div>
+      <div class="text">
+        <p>Компания на рынке уже более 14 лет, у нас работают опытные мастера, которые всегда готовы вас проконсультировать. Реалиузем различные виды услуг: шиномонтаж, регулировка углов развала схождения, покраска дисков, заправка кондиционеров, также есть возможность хранения сезонных шин на складе. Работаем по двум адресам в Санкт-Петербурге: Волхонское шоссе, 125, корпус 2; проспект Ветеранов, 184.
+        Сервис оборудован комнатой для клиентов, где вы можете провести время за чашкой чая, ожидая выполнение работ. </p>
+      </div>
+    </section>
 
-  <section class="main">
-    <div class="intro">
-      <h2>Немного о нас</h2>
-      <span>Расскажем вам о сервисе, который предоставляем с 2006 года</span>
-    </div>
-    <div class="text">
-      <span>Компания на рынке уже более 14 лет, у нас работают опытные мастера, которые всегда готовы вас проконсультировать. Реалиузем различные виды услуг: шиномонтаж, регулировка углов развала схождения, покраска дисков, заправка кондиционеров, также есть возможность хранения сезонных шин на складе. Работаем по двум адресам в Санкт-Петербурге: Волхонское шоссе, 125, корпус 2; проспект Ветеранов, 184.
-      Сервис оборудован комнатой для клиентов, где вы можете провести время за чашкой чая, ожидая выполнение работ. </span>
-    </div>
-  </section>
+    <section class="services">
+      <h2>Виды предоставляемых услуг</h2>
 
-  <section class="services">
-    <h2>Виды предоставляемых услуг</h2>
+      <div class="img">
+        <img src="https://darlion.ru/offoto/8633_r_3940.jpg" alt="Изображение демонтажа колеса у машины на подъёмнике">
+        <span>Шиномонтаж</span>
+      </div>
 
-    <div class="img">
-      <img src="https://darlion.ru/offoto/8633_r_3940.jpg" alt="">
-      <span>Шиномонтаж</span>
-    </div>
+      <div class="img">
+        <img src="https://hyundai-kuntsevo.ru/images/added/10.jpg" alt="Машина стоит на подъёмнике с закрепленными датчиками для измерения углов развала схождения">
+        <span>Регулировка развала схождения</span>
+      </div>
 
-    <div class="img">
-      <img src="https://hyundai-kuntsevo.ru/images/added/10.jpg" alt="">
-      <span>Регулировка развала схождения</span>
-    </div>
+      <div class="img">
+        <img src="https://www.kolecity.ru/img/bg-storage.jpg" alt="Шины клиентов хранятся на складе">
+        <span>Сезонное хранение шин</span>
+      </div>
+    </section>
 
-    <div class="img">
-      <img src="https://www.kolecity.ru/img/bg-storage.jpg" alt="">
-      <span>Сезонное хранение шин</span>
-    </div>
-  </section>
-
-  <section class="contacts">
-    <center>
+    <section class="contacts">
       <h5>Обратная связь</h5>
-    </center>
-    <form class="form_input">
-      <label for="name">Имя <span>*</span></label><br>
-      <input type="text" placeholder="Введите имя" name="name" id="name"><br>
-      <label for="email">Ваша почта <span>*</span></label><br>
-      <input type="email" placeholder="Введите email" name="email" id="email"><br>
-      <label for="message">Сообщение <span>*</span></label><br>
-      <textarea type="message" placeholder="Введите имя" name="message" id="message"></textarea><br>
-      <div id="mess_send" class="btn">Отправить</div>
-    </form>
-  </section>
-
-
+      <form class="form_input">
+        <label for="name">Имя <span>*</span></label>
+        <input type="text" placeholder="Введите имя" name="name" id="name">
+        <label for="email">Ваша почта <span>*</span></label>
+        <input type="email" placeholder="Введите email" name="email" id="email">
+        <label for="message">Сообщение <span>*</span></label>
+        <textarea type="message" placeholder="Введите имя" name="message" id="message"></textarea>
+        <div id="mess_send" class="btn">Отправить</div>
+      </form>
+    </section>
+  </main>
 
   <footer class="social">
-    <a href="https://2gis.ru/spb/firm/70000001025669959"><img class="icons" src="https://avatars0.githubusercontent.com/u/1481435?s=400&v=4" alt="2GIS"></a>
-    <a href="https://www.google.com/maps/place/%D0%92%D0%BE%D0%BB%D1%85%D0%BE%D0%BD%D1%81%D0%BA%D0%B8%D0%B9+%D0%A8%D0%B8%D0%BD%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%D0%BD%D1%8B%D0%B9+%D0%A6%D0%B5%D0%BD%D1%82%D1%80/@59.8172079,30.1110018,15z/data=!4m5!3m4!1s0x0:0x4f87e2fc24537858!8m2!3d59.8172079!4d30.1110018"><img class="icons" src="https://image.flaticon.com/icons/svg/888/888856.svg" alt="googleMaps"></a>
-    <a href="https://yandex.ru/search/?text=%D0%B2%D0%BE%D0%BB%D1%85%D0%BE%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D1%88%D0%B8%D0%BD%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%D0%BD%D1%8B%D0%B9%20%D1%86%D0%B5%D0%BD%D1%82%D1%80%20%D1%81%D0%BF%D0%B1&lr=2"><img class="icons" src="https://upload.wikimedia.org/wikipedia/commons/1/13/%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%B0%D1%80%D1%82%D1%8B_%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png" alt="yandexMaps"></a>
+    <ul>
+      <li><a href="https://2gis.ru/spb/firm/70000001025669959"><img class="icons" src="https://avatars0.githubusercontent.com/u/1481435?s=400&v=4" alt="2GIS"></a></li>
+      <li><a href="https://www.google.com/maps/place/%D0%92%D0%BE%D0%BB%D1%85%D0%BE%D0%BD%D1%81%D0%BA%D0%B8%D0%B9+%D0%A8%D0%B8%D0%BD%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%D0%BD%D1%8B%D0%B9+%D0%A6%D0%B5%D0%BD%D1%82%D1%80/@59.8172079,30.1110018,15z/data=!4m5!3m4!1s0x0:0x4f87e2fc24537858!8m2!3d59.8172079!4d30.1110018"><img class="icons" src="https://image.flaticon.com/icons/svg/888/888856.svg" alt="googleMaps"></a></li>
+      <li><a href="https://yandex.ru/search/?text=%D0%B2%D0%BE%D0%BB%D1%85%D0%BE%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D1%88%D0%B8%D0%BD%D0%BE%D0%BC%D0%BE%D0%BD%D1%82%D0%B0%D0%B6%D0%BD%D1%8B%D0%B9%20%D1%86%D0%B5%D0%BD%D1%82%D1%80%20%D1%81%D0%BF%D0%B1&lr=2"><img class="icons" src="https://upload.wikimedia.org/wikipedia/commons/1/13/%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9A%D0%B0%D1%80%D1%82%D1%8B_%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF.png" alt="yandexMaps"></a></li>
+    </ul>
 
     <div class="time">
       <span>
@@ -98,9 +114,8 @@
       </span>
     </div>
 
-    <a href="tel:+74957873422" class=tel>Позвоните нам 8 (812) 945-24-44</a>
+    <a href="tel:88129452444" class=tel>Позвоните нам 8 (812) 945-24-44</a>
   </footer>
-
 
 </body>
 </html>

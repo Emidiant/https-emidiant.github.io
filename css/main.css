@@ -19,39 +19,52 @@ body {
 
 header {
   width: 100%;
-  padding: 10px 0.5% 0px 0.5%;
+  /* padding: 10px 0.5% 0px 0.5%; */
   background: transparent;
-  float: left;
   position: fixed;
+  display: inline-block;
 }
 
 header .logo {
   color: #fff;
   float: left;
-  width: 30%;
-  font-size: 1.1em;
-  margin-top: 5px;
-}
-
-header .logo span {
+  width: 15%;
+  /* сверху | справа | снизу | слева */
+  margin: 10px 0 0 40px;
   font-size: 1.7em;
-  /* line-height: 45px; */
-  margin-left: 40px;
   font-family: 'Caladea', serif;
 }
 
 .about {
-  text-align: center;
-  margin-top: 15px;
+  text-align: left;
   font-size: 1.2em;
   float: right;
-  width: 70%;
+  width: 50%;
+  margin: 15px 15% 0 0;
+}
 
+.about li {
+  display: inline;
 }
 
 .about a {
   color: #fff;
   margin-right: 7%;
+}
+
+header .tel {
+  /* text-align: left; */
+  font-size: 1.2em;
+  float: left;
+  width: 10%;
+  margin-top: 15px;
+  color: white;
+  position: absolute;
+  right: 3%;
+}
+
+nav {
+  display: inline-block;
 }
 
 
@@ -69,6 +82,11 @@ header .logo span {
 
 .top h1 {
   padding-top: 20%;
+}
+
+.centre {
+  font-size: 0.8em;
+  color: #F3F3F3;
 }
 
 /* Краткое описание продукта/услуги */
@@ -89,8 +107,12 @@ header .logo span {
   float: left;
 }
 
+
 .main h2{font-size: 3em}
-.main span{color: #929292}
+.main p{
+  color: #929292;
+  text-align: justify;
+}
 
 /* Виды услуг */
 
@@ -119,10 +141,8 @@ header .logo span {
 .services .img {
   float: left;
 	width: 25%;
-	/* margin: 20px; */
-  margin-right: 5%;
-  margin-left: 3%;
-  margin-top: 40px;
+  /* сверху | справа | снизу | слева */
+  margin: 40px 5% 0 3%;
 }
 
 .services img {
@@ -152,18 +172,15 @@ h1, h2, h3, h4, h5 {
 }
 
 .contacts h5 {
+  text-align: center;
   font-size: 3em;
   color: #929292
 }
-/*
-#services .img:nth-child(odd) {
-  margin-left: 18%;
-} */
 
 .form_input {
-  margin-top: 15px;
+  /* сверху | справа | снизу | слева */
+  margin: 15px 0 0 38%;
   width: 35%;
-  margin-left: 38%;
   font: 1.1em;
 }
 
@@ -172,6 +189,7 @@ h1, h2, h3, h4, h5 {
   cursor: pointer;
   font-size: 1.4em;
   font-family: 'Caladea', serif;
+  display: block;
 }
 
 .form_input label > span {
@@ -186,6 +204,7 @@ h1, h2, h3, h4, h5 {
   border: 2px solid silver;
   font-size: 0.9em;
   color: #4a4a4a;
+  display: block;
 }
 
 .form_input input:focus, .form_input textarea:focus {
@@ -226,7 +245,7 @@ h1, h2, h3, h4, h5 {
   margin: 10px;
 }
 
-.tel {
+footer .tel {
   color: black;
   float: right;
   margin-right: 30px;
@@ -239,16 +258,7 @@ h1, h2, h3, h4, h5 {
   margin-top: 20px;
   float: left;
 }
-/* .social a {
-    text-align: center;
-    width: 48px;
-    height: 48px;
-    float: left;
-    background: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
-    border-radius: 24px;
-    margin: 0 10px 10px 0;
-    padding: 6px;
-    color: #000;
-} */
+
+.social li {
+  display: inline;
+}
