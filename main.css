@@ -1,0 +1,271 @@
+
+@import url('https://fonts.googleapis.com/css?family=Caladea|Roboto|Spartan&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body, html{
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: 'Caladea', serif;
+}
+
+header {
+  width: 100%;
+  /* padding: 10px 0.5% 0px 0.5%; */
+  background: transparent;
+  position: fixed;
+  display: inline-block;
+}
+
+header .logo {
+  color: #fff;
+  float: left;
+  width: 15%;
+  /* сверху | справа | снизу | слева */
+  margin: 10px 0 0 40px;
+  font-size: 1.7em;
+  font-family: 'Caladea', serif;
+}
+
+.about {
+  text-align: left;
+  font-size: 1.2em;
+  /* float: right; */
+  width: 50%;
+  margin: 15px 8% 0 12%;
+}
+
+.about li {
+  display: inline;
+}
+
+.about a {
+  color: #fff;
+  margin-right: 7%;
+}
+
+header .tel {
+  /* text-align: left; */
+  font-size: 1.2em;
+  /* float: left; */
+  width: 10%;
+  margin-top: 15px;
+  color: white;
+  /* position: absolute;
+  right: 3%; */
+}
+
+nav {
+  display: inline-block;
+}
+
+
+.top {
+  width: 100%;
+  height: 1000px;
+  background-image: url(https://100k1.pro/sites/default/files/styles/1920x1080m/public/service/shin.jpg?itok=aGVpa39n);
+  background-blend-mode: multiply;
+  background-color: #2e3a44;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  font-size: 3.5em;
+}
+
+.top h1 {
+  padding-top: 20%;
+}
+
+.centre {
+  font-size: 0.8em;
+  color: #F3F3F3;
+}
+
+/* Краткое описание продукта/услуги */
+
+.main {
+  padding: 100px 20%;
+  width: 60%;
+  float: left;
+  background-color: #bddede;
+  border-top: 3px solid #898484;
+  color: #484848;
+  font-size: 1.3em;
+}
+
+.main div{
+  width: 46%;
+  margin-right: 4%;
+  float: left;
+}
+
+
+.main h2{font-size: 3em}
+.text p{
+  text-align: justify;
+}
+
+.main p{
+  color: #929292;
+}
+
+/* Виды услуг */
+
+.services {
+  background-color: #bddede;
+  padding: 100px 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+
+.services h2{
+  font-size: 2em;
+  color: #746E6E;
+}
+
+.services span{
+  color: #929292;
+  float: left;
+  width: 100%;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.services .img {
+  float: left;
+	width: 25%;
+  /* сверху | справа | снизу | слева */
+  margin: 40px 5% 0 3%;
+}
+
+.services img {
+  width: 300px;
+  height: 200px;
+  background: #3A7777;
+  padding: 5px;
+  border: 2px solid silver;
+  float: left;
+  margin-left: 20px;
+}
+
+/* Обратная связь */
+
+.contacts {
+  width: 100%;
+  float: left;
+  padding-bottom: 40px;
+  padding-top: 70px;
+  border-top: 4px solid #898484;
+  background: #f4f4f4;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Caladea', serif;
+  font-weight: lighter;
+}
+
+.contacts h5 {
+  text-align: center;
+  font-size: 3em;
+  color: #929292
+}
+
+.form_input {
+  /* сверху | справа | снизу | слева */
+  margin: 15px 0 0 38%;
+  width: 35%;
+  font: 1.1em;
+}
+
+.form_input label {
+  color: #505050;
+  cursor: pointer;
+  font-size: 1.4em;
+  font-family: 'Caladea', serif;
+  display: block;
+}
+
+.form_input label > span {
+  color: #e87e7e;
+}
+
+.form_input input, .form_input textarea {
+  margin-bottom: 10px;
+  width: 70%;
+  padding: 10px 2%;
+  border-radius: 7px;
+  border: 2px solid silver;
+  font-size: 0.9em;
+  color: #4a4a4a;
+  display: block;
+}
+
+.form_input input:focus, .form_input textarea:focus {
+  border-color: #333;
+}
+
+.btn {
+  float: left;
+  border-radius: 5px;
+  padding: 5px 9px;
+  font-size: 1.2em;
+  background-color: #078B8B;
+  text-shadow: #454545 0 0 2px;
+  cursor: pointer;
+  color: white;
+  font-family: 'Caladea', serif;
+}
+
+.btn:hover{
+  background-color: #c15443;
+}
+
+/* Социальные сети */
+.social {
+  width: 100%;
+  float: left;
+  padding-bottom: 40px;
+  padding-top: 70px;
+  border-top: 4px solid #898484;
+  background: #ABA9A9;
+}
+
+.icons {
+  /* width: 40px; */
+  height: 40px;
+  float: left;
+  padding: 10px;
+  margin: 10px;
+}
+
+footer .tel {
+  color: black;
+  float: right;
+  margin-right: 30px;
+  margin-top: 20px;
+  font-family: 'Caladea', serif;
+}
+
+.time {
+  font-family: 'Caladea', serif;
+  margin-top: 20px;
+  float: left;
+}
+
+.social li {
+  display: inline;
+}
+
+.services li {
+  display: inline;
+}
